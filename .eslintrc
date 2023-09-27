@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": [],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
