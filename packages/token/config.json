@@ -1,0 +1,14 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "ts": {
+      "buildPath": "./dist/",
+      "files": [
+        {
+          "destination": "token.js",
+          "format": "custom/format"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "color": {
+    "neutral_light_alpha": {
+      "100A": {
+        "value": "#091E4208",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "200A": {
+        "value": "#091E420F",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "300A": {
+        "value": "#091E4224",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "400A": {
+        "value": "#091E424F",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "500A": {
+        "value": "#091E427D",
+        "attributes": {
+          "category": "color"
+        }
+      }
+    }
+  }
+}

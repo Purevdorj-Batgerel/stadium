@@ -1,0 +1,54 @@
+{
+  "color": {
+    "neutral_dark_alpha": {
+      "-100A": {
+        "value": "#03040442",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "100A": {
+        "value": "#BCD6F00A",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "200A": {
+        "value": "#A1BDD914",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "250A": {
+        "value": "#C8E1F91A",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "300A": {
+        "value": "#A6C5E229",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "350A": {
+        "value": "#C3DEFE33",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "400A": {
+        "value": "#BFDBF847",
+        "attributes": {
+          "category": "color"
+        }
+      },
+      "500A": {
+        "value": "#9BB4CA80",
+        "attributes": {
+          "category": "color"
+        }
+      }
+    }
+  }
+}

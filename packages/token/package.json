@@ -1,0 +1,33 @@
+{
+  "name": "@stadium/token",
+  "version": "0.0.0",
+  "description": "",
+  "author": {
+    "name": "Purevdorj Batgerel",
+    "email": "purevdorj.batgerel@gmail.com",
+    "url": "https://github.com/Purevdorj-Batgerel"
+  },
+  "homepage": "https://github.com/Purevdorj-Batgerel/stadium",
+  "license": "UNLICENSED",
+  "main": "dist/token.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Purevdorj-Batgerel/stadium",
+    "directory": "packages/token"
+  },
+  "bugs": {
+    "url": "https://github.com/Purevdorj-Batgerel/stadium/issues",
+    "email": "purevdorj.batgerel@gmail.com"
+  },
+  "dependencies": {
+    "style-dictionary": "^3.8.0"
+  },
+  "scripts": {
+    "build": "node ./build.js",
+    "dev": "pnpm build -- --watch",
+    "clean": "rimraf dist .turbo"
+  }
+}
