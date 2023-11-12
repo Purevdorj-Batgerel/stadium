@@ -1,0 +1,45 @@
+{
+  "name": "@stadium/storybook",
+  "version": "0.0.0",
+  "description": "",
+  "author": {
+    "name": "Purevdorj Batgerel",
+    "email": "purevdorj.batgerel@gmail.com",
+    "url": "https://github.com/Purevdorj-Batgerel"
+  },
+  "homepage": "https://github.com/Purevdorj-Batgerel/stadium",
+  "license": "UNLICENSED",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Purevdorj-Batgerel/stadium",
+    "directory": "packages/checkbox"
+  },
+  "bugs": {
+    "url": "https://github.com/Purevdorj-Batgerel/stadium/issues",
+    "email": "purevdorj.batgerel@gmail.com"
+  },
+  "devDependencies": {
+    "@stadium/theme": "workspace:^",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-jss": "^10.10.0",
+    "storybook": "^7.5.3"
+  },
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build"
+  }
+}
