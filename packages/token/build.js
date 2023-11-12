@@ -20,7 +20,9 @@ StyleDictionary.registerFormat({
       }, main)
     })
 
-    return `module.export = ${JSON.stringify(main, null, 2)}`
+    // return `module.export = ${JSON.stringify(main, null, 2)}`
+    return `const token = ${JSON.stringify(main, null, 2)}
+    export default token`
   },
 })
 
