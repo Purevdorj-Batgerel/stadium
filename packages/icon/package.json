@@ -1,0 +1,42 @@
+{
+  "name": "@stadium/icon",
+  "version": "0.0.0",
+  "description": "",
+  "author": {
+    "name": "Purevdorj Batgerel",
+    "email": "purevdorj.batgerel@gmail.com",
+    "url": "https://github.com/Purevdorj-Batgerel"
+  },
+  "homepage": "https://github.com/Purevdorj-Batgerel/stadium",
+  "license": "UNLICENSED",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Purevdorj-Batgerel/stadium",
+    "directory": "packages/icon"
+  },
+  "bugs": {
+    "url": "https://github.com/Purevdorj-Batgerel/stadium/issues",
+    "email": "purevdorj.batgerel@gmail.com"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-jss": "^10.10.0",
+    "@types/react": "^18.2.25"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "dev": "pnpm build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src"
+  }
+}
