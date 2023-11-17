@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { IIconComponent } from './icon.interface'
+import { IconProps } from './iconProps.interface'
 
-export const ChevronLeft: FC<IIconComponent> = ({ size = 20 }) => {
+export const ChevronLeft: FC<IconProps> = ({ size = 20 }) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
