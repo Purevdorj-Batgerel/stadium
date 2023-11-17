@@ -30,6 +30,6 @@ const useStyles = createUseStyles<classNames, ButtonProps, Theme>({
     padding: '10px',
     display: 'block',
     fontWeight: props.fontWeight || 'bold',
-    backgroundColor: theme.background,
+    backgroundColor: theme.color.background.elevated,
   }),
 })
