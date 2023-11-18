@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { IconProps } from './iconProps.interface'
 
-export const ChevronRight: FC<IconProps> = ({ size = 20 }) => {
+export const ChevronRight: FC<IconProps> = ({ size = 20, className }) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -11,6 +11,7 @@ export const ChevronRight: FC<IconProps> = ({ size = 20 }) => {
       stroke='currentColor'
       width={size}
       height={size}
+      className={className}
     >
       <path
         strokeLinecap='round'
