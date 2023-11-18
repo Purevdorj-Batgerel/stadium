@@ -1,5 +1,6 @@
 import { createUseStyles, useTheme } from 'react-jss'
 import { Theme } from '@stadium/theme'
+import { ChevronUp, ChevronDown } from '@stadium/icon'
 
 type classNames =
   | 'container'
@@ -16,11 +17,13 @@ const navbarWidth = 256
 export const NavbarFooter = () => {
   const theme = useTheme<Theme>()
   const classes = useStyles({ theme })
+
+  const Icon = ChevronUp
   return (
     <div className={classes.container}>
       <div className={classes.heading}>
         <div className={classes.avatar}>
-          <img src='https://gravatar.com/avatar/4474ca42d303761c2901fa819c4f2547' />
+          <img src='https://gravatar.com/avatar' />
         </div>
         <div className={classes.title}>
           <a
@@ -28,13 +31,12 @@ export const NavbarFooter = () => {
             href='https://codepen.io/uahnbu/pens/public'
             target='_blank'
           >
-            uahnbu
+            Purvee
           </a>
           <span className={classes.subtitle}>Admin</span>
         </div>
-        <div>
-          <i className='fas fa-caret-up'></i>
-        </div>
+
+        <Icon />
       </div>
       <div className={classes.content}>
         <span>
@@ -69,6 +71,9 @@ const useStyles = createUseStyles<classNames, NavbarFooterProps, Theme>({
     height: '54px',
     display: 'flex',
     alignItems: 'center',
+    '& svg': {
+      marginRight: '16px',
+    },
   },
   avatar: {
     position: 'relative',
@@ -86,6 +91,7 @@ const useStyles = createUseStyles<classNames, NavbarFooterProps, Theme>({
     },
   },
   title: {
+    flex: '1',
     position: 'relative',
     marginLeft: '16px',
     width: '10px',

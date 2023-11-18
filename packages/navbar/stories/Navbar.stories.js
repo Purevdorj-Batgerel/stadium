@@ -9,7 +9,7 @@ export default {
   tags: ['autodocs'],
 }
 
-export const Primary = {
+export const Default = {
   args: {
     customClass: 'Button',
     text: 'Test text',
