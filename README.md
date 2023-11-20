@@ -1,8 +1,24 @@
 # Project Stadium
 
-## CLI commands
+This is my personal Design System project.
 
-Project is setup as monorepo structure and using `TurboRepo`
+Project is utilizing monorepo structure using `turborepo` and `PNPM`'s workspace
+
+## Project Structure
+
+### `turbo`
+
+The directory `turbo` contains `turborepo` related files, especially `turbo generators`
+
+### `packages`
+
+Main source code of the design systems are residing here (`Token`, `Theme`, `Icon`, `Button`, etc)
+
+### `apps`
+
+Contains `storybook` config, web and mobile apps.
+
+## CLI commands
 
 To start dev environment run:
 
