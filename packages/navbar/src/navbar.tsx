@@ -3,9 +3,12 @@ import { NavbarFooter } from './navbarFooter'
 import { NavbarItem } from './navbarItem'
 import { createUseStyles, useTheme } from 'react-jss'
 import { Theme } from '@stadium/theme'
+import { ReactNode } from 'react'
+
+import { Home, Calendar, LightBulb, Fire, Information } from '@stadium/icon'
 
 interface Item {
-  class: string
+  icon: ReactNode
   text: string
 }
 
@@ -14,14 +17,14 @@ type classNames = 'container' | 'content'
 interface NavbarProps {}
 
 const items: Item[] = [
-  { class: 'fa-palette', text: 'Your Work' },
-  { class: 'fa-images', text: 'Assets' },
-  { class: 'fa-thumbtack', text: 'Pinned Items' },
-  { class: 'fa-heart', text: 'Following' },
-  { class: 'fa-chart-line', text: 'Trending' },
-  { class: 'fa-fire', text: 'Challenges' },
-  { class: 'fa-magic', text: 'Spark' },
-  { class: 'fa-gem', text: 'Codepen Pro' },
+  { icon: <Home />, text: 'Your Work' },
+  { icon: <Calendar />, text: 'Assets' },
+  { icon: <Calendar />, text: 'Pinned Items' },
+  { icon: <Calendar />, text: 'Following' },
+  { icon: <Calendar />, text: 'Trending' },
+  { icon: <LightBulb />, text: 'Challenges' },
+  { icon: <Information />, text: 'Spark' },
+  { icon: <Fire />, text: 'Codepen Pro' },
 ]
 
 const navbarWidth = 256
@@ -36,7 +39,7 @@ export const Navbar = () => {
       <NavbarHeader />
       <div className={classes.content}>
         {items.map((item: Item) => (
-          <NavbarItem customClass={item.class} text={item.text} />
+          <NavbarItem key={item.text} icon={item.icon} text={item.text} />
         ))}
       </div>
       <NavbarFooter />
