@@ -4,6 +4,7 @@
 node_modules
 .pnp
 .pnp.js
+.yarn/install-state.gz
 
 # testing
 coverage
@@ -29,6 +30,7 @@ pnpm-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env*.local
 
 # turbo
 .turbo
@@ -41,3 +43,8 @@ dist
 
 # generated types
 .astro/
+
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
