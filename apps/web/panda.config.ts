@@ -13,22 +13,6 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     extend: {},
-    semanticTokens: {
-      colors: {
-        textPrimary: {
-          value: {
-            base: 'black',
-            _dark: 'white',
-          },
-        },
-        background: {
-          value: {
-            base: 'white',
-            _dark: 'black',
-          },
-        },
-      },
-    },
   },
 
   // The output directory for your css system
