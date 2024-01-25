@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'react-jss'
-import { lightTheme } from '@stadium/theme'
+import { darkTheme } from '@stadium/theme'
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
@@ -15,7 +15,7 @@ const preview = {
   },
   decorators: [
     (Story) => (
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={darkTheme}>
         <Story />
       </ThemeProvider>
     ),
