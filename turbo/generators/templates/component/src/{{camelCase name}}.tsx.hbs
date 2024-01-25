@@ -1,19 +1,8 @@
-import { createUseStyles, useTheme } from 'react-jss'
-import { Theme } from '@stadium/theme'
-
-type classNames = 'container'
-
 export interface {{pascalCase name}}Props {}
 
 export const {{pascalCase name}} = () => {
-  const theme = useTheme<Theme>()
-  const classes = useStyles({theme})
 
   return (
-    <div className={classes.container}>New component</div>
+    <div>New component</div>
   )
 }
-
-const useStyles = createUseStyles<classNames, {{pascalCase name}}Props, Theme>({
-  container: {}
-})

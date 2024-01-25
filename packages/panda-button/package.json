@@ -22,12 +22,9 @@
     "url": "https://github.com/Purevdorj-Batgerel/stadium/issues",
     "email": "purevdorj.batgerel@gmail.com"
   },
-  "dependencies": {
-    "@stadium/theme": "workspace:^"
-  },
+  "dependencies": {},
   "devDependencies": {
     "react": "^18.2.0",
-    "react-jss": "^10.10.0",
     "@types/react": "^18.2.25"
   },
   "peerDependencies": {

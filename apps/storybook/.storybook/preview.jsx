@@ -1,6 +1,4 @@
 import React from 'react'
-import { ThemeProvider } from 'react-jss'
-import { darkTheme } from '@stadium/theme'
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
@@ -13,13 +11,7 @@ const preview = {
       },
     },
   },
-  decorators: [
-    (Story) => (
-      <ThemeProvider theme={darkTheme}>
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+  decorators: [(Story) => <Story />],
 }
 
 export default preview
